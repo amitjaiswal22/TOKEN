@@ -1,0 +1,312 @@
+├─ type: SourceUnit
+└─ children
+   ├─ 0
+   │  ├─ type: PragmaDirective
+   │  ├─ name: solidity
+   │  └─ value: ^0.8.9
+   └─ 1
+      ├─ type: ContractDefinition
+      ├─ name: Lock
+      ├─ baseContracts
+      ├─ subNodes
+      │  ├─ 0
+      │  │  ├─ type: StateVariableDeclaration
+      │  │  ├─ variables
+      │  │  │  └─ 0
+      │  │  │     ├─ type: VariableDeclaration
+      │  │  │     ├─ typeName
+      │  │  │     │  ├─ type: ElementaryTypeName
+      │  │  │     │  ├─ name: uint
+      │  │  │     │  └─ stateMutability
+      │  │  │     ├─ name: unlockTime
+      │  │  │     ├─ identifier
+      │  │  │     │  ├─ type: Identifier
+      │  │  │     │  └─ name: unlockTime
+      │  │  │     ├─ expression
+      │  │  │     ├─ visibility: public
+      │  │  │     ├─ isStateVar: true
+      │  │  │     ├─ isDeclaredConst: false
+      │  │  │     ├─ isIndexed: false
+      │  │  │     ├─ isImmutable: false
+      │  │  │     ├─ override
+      │  │  │     └─ storageLocation
+      │  │  └─ initialValue
+      │  ├─ 1
+      │  │  ├─ type: StateVariableDeclaration
+      │  │  ├─ variables
+      │  │  │  └─ 0
+      │  │  │     ├─ type: VariableDeclaration
+      │  │  │     ├─ typeName
+      │  │  │     │  ├─ type: ElementaryTypeName
+      │  │  │     │  ├─ name: address
+      │  │  │     │  └─ stateMutability: payable
+      │  │  │     ├─ name: owner
+      │  │  │     ├─ identifier
+      │  │  │     │  ├─ type: Identifier
+      │  │  │     │  └─ name: owner
+      │  │  │     ├─ expression
+      │  │  │     ├─ visibility: public
+      │  │  │     ├─ isStateVar: true
+      │  │  │     ├─ isDeclaredConst: false
+      │  │  │     ├─ isIndexed: false
+      │  │  │     ├─ isImmutable: false
+      │  │  │     ├─ override
+      │  │  │     └─ storageLocation
+      │  │  └─ initialValue
+      │  ├─ 2
+      │  │  ├─ type: EventDefinition
+      │  │  ├─ name: Withdrawal
+      │  │  ├─ parameters
+      │  │  │  ├─ 0
+      │  │  │  │  ├─ type: VariableDeclaration
+      │  │  │  │  ├─ typeName
+      │  │  │  │  │  ├─ type: ElementaryTypeName
+      │  │  │  │  │  ├─ name: uint
+      │  │  │  │  │  └─ stateMutability
+      │  │  │  │  ├─ name: amount
+      │  │  │  │  ├─ identifier
+      │  │  │  │  │  ├─ type: Identifier
+      │  │  │  │  │  └─ name: amount
+      │  │  │  │  ├─ isStateVar: false
+      │  │  │  │  ├─ isIndexed: false
+      │  │  │  │  ├─ storageLocation
+      │  │  │  │  └─ expression
+      │  │  │  └─ 1
+      │  │  │     ├─ type: VariableDeclaration
+      │  │  │     ├─ typeName
+      │  │  │     │  ├─ type: ElementaryTypeName
+      │  │  │     │  ├─ name: uint
+      │  │  │     │  └─ stateMutability
+      │  │  │     ├─ name: when
+      │  │  │     ├─ identifier
+      │  │  │     │  ├─ type: Identifier
+      │  │  │     │  └─ name: when
+      │  │  │     ├─ isStateVar: false
+      │  │  │     ├─ isIndexed: false
+      │  │  │     ├─ storageLocation
+      │  │  │     └─ expression
+      │  │  └─ isAnonymous: false
+      │  ├─ 3
+      │  │  ├─ type: FunctionDefinition
+      │  │  ├─ name
+      │  │  ├─ parameters
+      │  │  │  └─ 0
+      │  │  │     ├─ type: VariableDeclaration
+      │  │  │     ├─ typeName
+      │  │  │     │  ├─ type: ElementaryTypeName
+      │  │  │     │  ├─ name: uint
+      │  │  │     │  └─ stateMutability
+      │  │  │     ├─ name: _unlockTime
+      │  │  │     ├─ identifier
+      │  │  │     │  ├─ type: Identifier
+      │  │  │     │  └─ name: _unlockTime
+      │  │  │     ├─ storageLocation
+      │  │  │     ├─ isStateVar: false
+      │  │  │     ├─ isIndexed: false
+      │  │  │     └─ expression
+      │  │  ├─ returnParameters
+      │  │  ├─ body
+      │  │  │  ├─ type: Block
+      │  │  │  └─ statements
+      │  │  │     ├─ 0
+      │  │  │     │  ├─ type: ExpressionStatement
+      │  │  │     │  └─ expression
+      │  │  │     │     ├─ type: FunctionCall
+      │  │  │     │     ├─ expression
+      │  │  │     │     │  ├─ type: Identifier
+      │  │  │     │     │  └─ name: require
+      │  │  │     │     ├─ arguments
+      │  │  │     │     │  ├─ 0
+      │  │  │     │     │  │  ├─ type: BinaryOperation
+      │  │  │     │     │  │  ├─ operator: <
+      │  │  │     │     │  │  ├─ left
+      │  │  │     │     │  │  │  ├─ type: MemberAccess
+      │  │  │     │     │  │  │  ├─ expression
+      │  │  │     │     │  │  │  │  ├─ type: Identifier
+      │  │  │     │     │  │  │  │  └─ name: block
+      │  │  │     │     │  │  │  └─ memberName: timestamp
+      │  │  │     │     │  │  └─ right
+      │  │  │     │     │  │     ├─ type: Identifier
+      │  │  │     │     │  │     └─ name: _unlockTime
+      │  │  │     │     │  └─ 1
+      │  │  │     │     │     ├─ type: StringLiteral
+      │  │  │     │     │     ├─ value: Unlock time should be in the future
+      │  │  │     │     │     ├─ parts
+      │  │  │     │     │     │  └─ 0: Unlock time should be in the future
+      │  │  │     │     │     └─ isUnicode
+      │  │  │     │     │        └─ 0: false
+      │  │  │     │     ├─ names
+      │  │  │     │     └─ identifiers
+      │  │  │     ├─ 1
+      │  │  │     │  ├─ type: ExpressionStatement
+      │  │  │     │  └─ expression
+      │  │  │     │     ├─ type: BinaryOperation
+      │  │  │     │     ├─ operator: =
+      │  │  │     │     ├─ left
+      │  │  │     │     │  ├─ type: Identifier
+      │  │  │     │     │  └─ name: unlockTime
+      │  │  │     │     └─ right
+      │  │  │     │        ├─ type: Identifier
+      │  │  │     │        └─ name: _unlockTime
+      │  │  │     └─ 2
+      │  │  │        ├─ type: ExpressionStatement
+      │  │  │        └─ expression
+      │  │  │           ├─ type: BinaryOperation
+      │  │  │           ├─ operator: =
+      │  │  │           ├─ left
+      │  │  │           │  ├─ type: Identifier
+      │  │  │           │  └─ name: owner
+      │  │  │           └─ right
+      │  │  │              ├─ type: FunctionCall
+      │  │  │              ├─ expression
+      │  │  │              │  ├─ type: Identifier
+      │  │  │              │  └─ name: payable
+      │  │  │              ├─ arguments
+      │  │  │              │  └─ 0
+      │  │  │              │     ├─ type: MemberAccess
+      │  │  │              │     ├─ expression
+      │  │  │              │     │  ├─ type: Identifier
+      │  │  │              │     │  └─ name: msg
+      │  │  │              │     └─ memberName: sender
+      │  │  │              ├─ names
+      │  │  │              └─ identifiers
+      │  │  ├─ visibility: default
+      │  │  ├─ modifiers
+      │  │  ├─ override
+      │  │  ├─ isConstructor: true
+      │  │  ├─ isReceiveEther: false
+      │  │  ├─ isFallback: false
+      │  │  ├─ isVirtual: false
+      │  │  └─ stateMutability: payable
+      │  └─ 4
+      │     ├─ type: FunctionDefinition
+      │     ├─ name: withdraw
+      │     ├─ parameters
+      │     ├─ returnParameters
+      │     ├─ body
+      │     │  ├─ type: Block
+      │     │  └─ statements
+      │     │     ├─ 0
+      │     │     │  ├─ type: ExpressionStatement
+      │     │     │  └─ expression
+      │     │     │     ├─ type: FunctionCall
+      │     │     │     ├─ expression
+      │     │     │     │  ├─ type: Identifier
+      │     │     │     │  └─ name: require
+      │     │     │     ├─ arguments
+      │     │     │     │  ├─ 0
+      │     │     │     │  │  ├─ type: BinaryOperation
+      │     │     │     │  │  ├─ operator: >=
+      │     │     │     │  │  ├─ left
+      │     │     │     │  │  │  ├─ type: MemberAccess
+      │     │     │     │  │  │  ├─ expression
+      │     │     │     │  │  │  │  ├─ type: Identifier
+      │     │     │     │  │  │  │  └─ name: block
+      │     │     │     │  │  │  └─ memberName: timestamp
+      │     │     │     │  │  └─ right
+      │     │     │     │  │     ├─ type: Identifier
+      │     │     │     │  │     └─ name: unlockTime
+      │     │     │     │  └─ 1
+      │     │     │     │     ├─ type: StringLiteral
+      │     │     │     │     ├─ value: You can't withdraw yet
+      │     │     │     │     ├─ parts
+      │     │     │     │     │  └─ 0: You can't withdraw yet
+      │     │     │     │     └─ isUnicode
+      │     │     │     │        └─ 0: false
+      │     │     │     ├─ names
+      │     │     │     └─ identifiers
+      │     │     ├─ 1
+      │     │     │  ├─ type: ExpressionStatement
+      │     │     │  └─ expression
+      │     │     │     ├─ type: FunctionCall
+      │     │     │     ├─ expression
+      │     │     │     │  ├─ type: Identifier
+      │     │     │     │  └─ name: require
+      │     │     │     ├─ arguments
+      │     │     │     │  ├─ 0
+      │     │     │     │  │  ├─ type: BinaryOperation
+      │     │     │     │  │  ├─ operator: ==
+      │     │     │     │  │  ├─ left
+      │     │     │     │  │  │  ├─ type: MemberAccess
+      │     │     │     │  │  │  ├─ expression
+      │     │     │     │  │  │  │  ├─ type: Identifier
+      │     │     │     │  │  │  │  └─ name: msg
+      │     │     │     │  │  │  └─ memberName: sender
+      │     │     │     │  │  └─ right
+      │     │     │     │  │     ├─ type: Identifier
+      │     │     │     │  │     └─ name: owner
+      │     │     │     │  └─ 1
+      │     │     │     │     ├─ type: StringLiteral
+      │     │     │     │     ├─ value: You aren't the owner
+      │     │     │     │     ├─ parts
+      │     │     │     │     │  └─ 0: You aren't the owner
+      │     │     │     │     └─ isUnicode
+      │     │     │     │        └─ 0: false
+      │     │     │     ├─ names
+      │     │     │     └─ identifiers
+      │     │     ├─ 2
+      │     │     │  ├─ type: EmitStatement
+      │     │     │  └─ eventCall
+      │     │     │     ├─ type: FunctionCall
+      │     │     │     ├─ expression
+      │     │     │     │  ├─ type: Identifier
+      │     │     │     │  └─ name: Withdrawal
+      │     │     │     ├─ arguments
+      │     │     │     │  ├─ 0
+      │     │     │     │  │  ├─ type: MemberAccess
+      │     │     │     │  │  ├─ expression
+      │     │     │     │  │  │  ├─ type: FunctionCall
+      │     │     │     │  │  │  ├─ expression
+      │     │     │     │  │  │  │  ├─ type: Identifier
+      │     │     │     │  │  │  │  └─ name: address
+      │     │     │     │  │  │  ├─ arguments
+      │     │     │     │  │  │  │  └─ 0
+      │     │     │     │  │  │  │     ├─ type: Identifier
+      │     │     │     │  │  │  │     └─ name: this
+      │     │     │     │  │  │  ├─ names
+      │     │     │     │  │  │  └─ identifiers
+      │     │     │     │  │  └─ memberName: balance
+      │     │     │     │  └─ 1
+      │     │     │     │     ├─ type: MemberAccess
+      │     │     │     │     ├─ expression
+      │     │     │     │     │  ├─ type: Identifier
+      │     │     │     │     │  └─ name: block
+      │     │     │     │     └─ memberName: timestamp
+      │     │     │     ├─ names
+      │     │     │     └─ identifiers
+      │     │     └─ 3
+      │     │        ├─ type: ExpressionStatement
+      │     │        └─ expression
+      │     │           ├─ type: FunctionCall
+      │     │           ├─ expression
+      │     │           │  ├─ type: MemberAccess
+      │     │           │  ├─ expression
+      │     │           │  │  ├─ type: Identifier
+      │     │           │  │  └─ name: owner
+      │     │           │  └─ memberName: transfer
+      │     │           ├─ arguments
+      │     │           │  └─ 0
+      │     │           │     ├─ type: MemberAccess
+      │     │           │     ├─ expression
+      │     │           │     │  ├─ type: FunctionCall
+      │     │           │     │  ├─ expression
+      │     │           │     │  │  ├─ type: Identifier
+      │     │           │     │  │  └─ name: address
+      │     │           │     │  ├─ arguments
+      │     │           │     │  │  └─ 0
+      │     │           │     │  │     ├─ type: Identifier
+      │     │           │     │  │     └─ name: this
+      │     │           │     │  ├─ names
+      │     │           │     │  └─ identifiers
+      │     │           │     └─ memberName: balance
+      │     │           ├─ names
+      │     │           └─ identifiers
+      │     ├─ visibility: public
+      │     ├─ modifiers
+      │     ├─ override
+      │     ├─ isConstructor: false
+      │     ├─ isReceiveEther: false
+      │     ├─ isFallback: false
+      │     ├─ isVirtual: false
+      │     └─ stateMutability
+      └─ kind: contract
